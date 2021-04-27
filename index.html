@@ -11,22 +11,78 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css"/>
-    <title>Document</title>
+    <title>5 Day Weather App</title>
 </head>
 <body>
     <div class="container">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center col-12">
         <h1>Weather App</h1>
         <p>What's the weather look like in your neck of the woods.</p> 
       </div>
+      <div class="row align-items-start g-2">
+      <div class="col-3">
     <h3>Select a city</h3>
-    <form id="search-form">
-        <input id="search-input" placeholder="Somewhereville"></input>
-        <button type="button" class="btn btn-info btn-primary">Search</button>
+    
+    <form id="search-form" class="w-100">
+        <input id="searchInput" class="w-100" placeholder="Somewhereville"></input>
+        <button type="button" id="searchBtn" class="btn btn-info btn-primary mt-3 w-100">Search</button>
     </form>
-    <div id="location-btns"></div>
+    <button type="button" class="btn btn-light mt-3 w-100">Light</button>
+    </div>
+    <div class="col-9">
+      <div class="jumbotron text-center col-12">
+        <h3 id="cityName"></h3>
+        <h3 id="windSpeed"></h3>
+        <h3 id="uvIndex"></h3>
+        <h3 id="humidity"></h3>
+      </div>
+    </div>
+    <div id="forecastContainer" class="col-12">
+      <div class="p-3 mb-2 bg-light text-dark g-4">
+        <div class="row row-cols-1 row-cols-sm-5 ">
+        <div class="card border-info mx-1" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Info card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    
+    <div class="card border-info mx-1" style="max-width: 15rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Info card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
 
+  <div class="card border-info mx-1" style="max-width: 15rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h5 class="card-title">Info card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+<div class="card border-info mx-1" style="max-width: 15rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Info card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card border-info mx-1" style="max-width: 15rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Info card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+</div>
     </div>  
+    </div>
     <script type="text/javascript" src="assets/script.js">
       
     </script>
